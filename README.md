@@ -2,7 +2,7 @@
 
 See live: [https://react-temel-todos-hakan.netlify.app/](https://react-temel-todos-hakan.netlify.app/)
 
-<img src="https://www.stock-free.org/images/nature-scenary-beautiful-nature-trees-picture-trees-trees-free-image-stock-free-image-public-domain-image-royalty-free-image-free-image-21829821.jpg" width="100%" align="center">
+<img src="./src/Screenshot 2021-07-25 at 15-13-29 React App.png" width="100%" align="center">
 
 
 
