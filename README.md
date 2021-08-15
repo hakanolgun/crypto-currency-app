@@ -1,3 +1,13 @@
+# Crypto Currency Search App - ReactJS
+
+See live: [https://react-temel-todos-hakan.netlify.app/](https://react-temel-todos-hakan.netlify.app/)
+
+<img src="./src/Screenshot 2021-07-25 at 15-13-29 React App.png" width="100%" align="center">
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
