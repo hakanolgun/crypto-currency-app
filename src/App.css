@@ -2,17 +2,8 @@
   display: flex;
   justify-content: center;
   background: #1a1a1c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1a1a1c,
-    #3c3b3f
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1a1a1c,
-    #3c3b3f
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #1a1a1c, #3c3b3f);
+  background: linear-gradient(to right, #1a1a1c, #3c3b3f);
   color: white;
 }
 .coin-search {
@@ -23,7 +14,7 @@
   margin-bottom: 1rem;
 }
 
-.coin h1 {
+.coin h2 {
   font-size: 16px;
   width: 150px;
 }
@@ -36,14 +27,22 @@
   font-size: 1rem;
   font-weight: bolder;
   border: none;
-  background: #6D6027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6d6027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d3cbb8,
+    #6d6027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d3cbb8,
+    #6d6027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: black;
 }
-.coin-input:focus{
+.coin-input:focus {
   outline: solid blue;
 }
 .coin-input::placeholder {
@@ -52,36 +51,40 @@
   font-size: 1rem;
 }
 
-
-
-
-
-.coin-container {
-  display: flex;
-  justify-content: center;
-}
-
 .coin-row {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid #d7d7d7;
-  width: 900px;
+  border: 1px solid #d7d7d7;
+  width: 700px;
+  border-radius: 10px;
   padding: 0.2rem 1.5rem;
+  margin-bottom: 0.4rem;
+}
+.coin-row:hover {
+  background: #47474b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #47474b,
+    #3c3b3f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #47474b,
+    #3c3b3f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .coin {
+  width: 60%;
   display: flex;
   align-items: center;
-  padding-right: 1rem;
-  min-width: 300px;
+  justify-content: space-around;
 }
 
-.coin :nth-child(2){
-  margin-left: 0.7rem;
-}
 .coin img {
   height: 25px;
   width: 25px;
@@ -93,25 +96,19 @@
 }
 
 .coin-data {
+  width: 40%;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.coin-price{
+  width: 50%;
+  text-align: center;
+}
+.coin-percent{
+  width: 50%;
   text-align: right;
-  justify-content: space-between;
-}
-
-.coin-price {
-  width: 110px;
-}
-
-.coin-volume {
-  width: 155px;
-}
-
-.coin-marketcap {
-  width: 230px;
-}
-
-.coin-percent {
-  width: 100px;
+  justify-self: flex-end;
 }
 
 .red {
@@ -122,70 +119,14 @@
   color: #11d811;
 }
 
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 720px) {
+  .coin h2 {
+    font-size: 14px;
+    width: 100px;
+  }
   .coin-row {
-
-    width: 700px;
-    padding: 0.2rem 1rem;
+    width: 90%;
     font-size: 0.9rem;
-  }
-  .coin {
-    display: flex;
-    align-items: center;
-    padding-right: 1rem;
-    min-width: 250px;
-  }
-
-  .coin-data {
-    display: flex;
-    text-align: right;
-    justify-content: space-between;
-  }
-  .coin-volume{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px){
-  .coin-row{
-    justify-content: space-between;
-    width: 100%;
-  }
-  .coin-marketcap{
-    display: none;
-  }
-
-}
-@media screen and (max-width: 450px){
-  .coin-row{
-    justify-content: space-around;
-    width: 100%;
-  }
-  .coin{
-    padding-left: 0.5rem;
-    width: auto;
-    min-width: 180px;
-    max-width: 180px;
-
-  }
-  .coin-data{
-    width: auto;
-    min-width: 150px;
-    max-width: 150px;
-
-  }
-  .coin-marketcap{
-    display: none;
-  }
-
-  .coin-input {
-    padding-left: 16px;
-    width: 250px;
-    height: 40px;
-    border-radius: 4px;
-  }
-  .coin-text{
-    font-size: 1.7rem;
+    padding: 0.2rem 1rem;
   }
 }
