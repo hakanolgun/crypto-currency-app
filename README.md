@@ -1,6 +1,6 @@
 # Crypto Currency Search App - ReactJS
 
-See live: [https://react-temel-todos-hakan.netlify.app/](https://react-temel-todos-hakan.netlify.app/)
+See live: [https://patika-proje-crypto.netlify.app/](https://patika-proje-crypto.netlify.app/)
 
 <img src="./src/photo.png" width="100%" align="center">
 
