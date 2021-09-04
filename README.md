@@ -16,3 +16,10 @@ See live: [https://patika-proje-crypto.netlify.app/](https://patika-proje-crypto
 * CSS
 * CoinGecko API
 * Axios
+
+## Usage
+
+In the project directory, you can run:
+```
+yarn start
+```
